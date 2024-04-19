@@ -1,0 +1,223 @@
+---
+import Container from "./Container.astro";
+
+import Astronaut from "../assets/Img/astronaut.png";
+---
+
+<script>
+  const texts = ["Zenith Agency"]; // Array of texts to display with the effect
+  const typingContainer = document.getElementById("typing-container"); // Element where the text will be shown
+  let currentTextIndex = 0;
+  let currentText = "";
+  let typingSpeed = 100; // Adjust the typing speed (milliseconds per character)
+
+  function type() {
+    const text = texts[currentTextIndex];
+
+    for (let i = 0; i < text.length; i++) {
+      setTimeout(() => {
+        currentText += text[i];
+        typingContainer.innerHTML = currentText;
+      }, i * typingSpeed); // Delay based on index and typing speed
+    }
+
+    // Call the typing function again after 20 seconds with a loop
+    setTimeout(() => {
+      currentText = ""; // Reset currentText for the next animation
+      currentTextIndex = 0; // Reset index for the next text in the array
+      type();
+    }, 10000); // 20000 milliseconds = 20 seconds
+  }
+
+  // Call the typing function only once on page load
+  window.onload = type;
+</script>
+
+<div
+  class="relative HeaderPri"
+  id="home"
+  style="clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0% 80%);"
+>
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 bg-cover no-repeat bg-fixed"
+    style=" background-image: url('/img/header.png');"
+  >
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400">
+    </div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300">
+    </div>
+  </div>
+  <Container>
+    <div class="relative pt-12 ml-auto">
+      <div
+        class="header grid lg:grid-cols-2 place-items-center pb-4 md:pt-4- md:pb-8"
+      >
+        <div class="py-6 md:order-1 hidden md:block">
+          <img class="fadeInUp duration-1000" src={Astronaut} alt="" />
+        </div>
+        <div class="">
+          <div class="contenedor mb-12 contenedor-titulo">
+            <h1 class="text-9xl text-start font-bold">
+              <span
+                class="bg-clip-text text-transparent bg-gradient-to-r f500 from-primary to-tercer typing-container"
+                id="typing-container"></span>
+              <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 typing-container"
+                id="typing-container"></span>
+            </h1>
+          </div>
+          <p class="subtitulo text-gray-700 text-start text-3xl">
+            Transformación Digital & Growth
+          </p>
+          <div
+            class="mt-10 flex flex-wrap justify-start gap-y-4 gap-x-6 boton-header"
+          >
+            <a
+              href="https://api.whatsapp.com/send?phone=+5493865751144&text=Hola, quiero recibir asesoramiento"
+              class="relative flex h-11 items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full bg-primary rounded-full hover:bg-tercer before:transitionbefore:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+            >
+              <span class="relative text-base font-semibold text-white"
+                >Recibe asesoramiento ahora</span
+              >
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </Container>
+</div>
+
+
+<style>
+  .zenith {
+    font-size: 8.5rem;
+    letter-spacing: 5px;
+    border-right: 5px solid;
+    width: 100%;
+    overflow: hidden;
+    animation: typing 2s steps(60), cursor 0.2s step-end alternate;
+  }
+
+  .agency {
+    font-size: 8.5rem;
+    letter-spacing: 2px;
+    border-right: 5px solid;
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+    animation: typing 2s steps(60), cursor 0.2s step-end alternate;
+  }
+
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 2s; /* Cambia la duración a 2 segundos */
+    animation-duration: 2s;
+  }
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 489dbfae5eb6a11b40ac18be94189cb0d7cd6395
+  /* .spanAgency {
+    
+    background: linear-gradient(242deg, rgba(0,56,167,1), rgb(255,77,176)) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  } */
+=======
+ 
+>>>>>>> baaf795 (f)
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> origin/main
+=======
+>>>>>>> 489dbfae5eb6a11b40ac18be94189cb0d7cd6395
+
+  .subtitulo {
+    font-size: 2rem;
+  }
+
+  .logo-solo {
+    width: 390px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .HeaderPri {
+      height: 35rem;
+    }
+
+    h1 {
+      text-align: center !important;
+    }
+
+    .subtitulo {
+      text-align: center;
+    }
+
+    .contenedor-titulo h1 {
+      font-size: 6rem;
+      line-height: 1;
+      margin-top: 3rem;
+    }
+
+    .contenedor-titulo {
+      margin-bottom: 2rem;
+    }
+
+    .subtitulo {
+      font-size: 1.8rem;
+    }
+
+    .boton-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+</style>

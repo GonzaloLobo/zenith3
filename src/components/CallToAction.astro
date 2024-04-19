@@ -1,0 +1,133 @@
+---
+import Container from "./Container.astro";
+---
+
+<div class="relative py-16">
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40"
+  >
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400">
+    </div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300">
+    </div>
+  </div>
+  <Container>
+    <div class="relative">
+      <div class="flex items-center justify-center -space-x-1 gap-4">
+        <div class="contenedor-personal text-center">
+          <img
+            loading="lazy"
+            width="100"
+            height="100"
+            src="./img/avatars/gnzZenith.png"
+            alt="member photo"
+            class="rounded-full object-cover"
+          />
+
+          <p
+            class="mt-2 rounded-full text-center text-black bg-slate-400 shadow-sm tag"
+          >
+            Desarrollo Web
+          </p>
+        </div>
+
+        <div class="contenedor-personal">
+          <img
+            loading="lazy"
+            width="125"
+            height="125"
+            src="./img/avatars/smm2.png"
+            alt="member photo"
+            class="rounded-full object-cover"
+          />
+          <p
+            class="mt-2 rounded-full text-center text-black bg-slate-400 shadow-sm tag"
+          >
+            Social Media
+          </p>
+        </div>
+        <div class="contenedor-personal">
+          <img
+            loading="lazy"
+            width="150"
+            height="150"
+            src="./img/avatars/avatar-3.webp"
+            alt="member photo"
+            class="rounded-full object-cover"
+          />
+          <p
+            class="mt-2 rounded-full text-center text-black bg-slate-400 shadow-sm tag"
+          >
+            CEO
+          </p>
+        </div>
+        <div class="contenedor-personal">
+          <img
+            loading="lazy"
+            width="125"
+            height="125"
+            src="./img/avatars/danaZenith.png"
+            alt="member photo"
+            class="relative rounded-full object-cover"
+          />
+          <p
+            class="mt-2 rounded-full text-center text-black bg-slate-400 shadow-sm tag"
+          >
+            Marketing Digital
+          </p>
+        </div>
+        <div class="contenedor-personal">
+          <img
+            loading="lazy"
+            width="100"
+            height="100"
+            src="./img/avatars/legales.png"
+            alt="member photo"
+            class="rounded-full object-cover"
+          />
+          <p
+            class="mt-2 rounded-full text-center text-black bg-slate-400 shadow-sm tag"
+          >
+            Legales
+          </p>
+        </div>
+      </div>
+      <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
+        <h1 class="text-center text-4xl font-bold text-gray-800 md:text-5xl">
+          Reserva tu consulta GRATUITA!
+        </h1>
+        <p class="text-center text-xl text-gray-600">
+          ¡Contactanós hoy mismo para una consulta gratuita!
+        </p>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a
+            href="https://api.whatsapp.com/send?phone=+5493865751144&text=Hola Zenith Agency, me interesan sus servicios"
+            class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full bg-primary rounded-full hover:bg-tercer  before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          >
+            <span class="relative text-base font-semibold text-white"
+              >Nuestro WhatsApp</span
+            >
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+5493865751144&text=Hola Zenith Agency, quisiera agendar una cita"
+            class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          >
+            <span class="relative text-base font-semibold text-primary"
+              >Agendar cita</span
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>
+
+<style>
+  .tag {
+    --tw-bg-opacity: 1;
+    background-color: rgba(148, 163, 184, 0.475);
+    border: 1px solid #80808047;
+    font-size: small;
+  }
+</style>
