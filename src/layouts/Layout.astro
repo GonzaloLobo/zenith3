@@ -3,10 +3,7 @@ import { AstroFont } from "astro-font";
 import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
 import LogoWp from "../assets/Img/whatsapp.svg";
-
 ---
-
-
 
 <html lang="en">
   <head>
@@ -19,7 +16,7 @@ import LogoWp from "../assets/Img/whatsapp.svg";
     a propulsar tu negocio hasta lo mas alto en el cielo"
     />
     <title>Zenith Agency - Transformación Digital & Growth</title>
-    <AstroFont
+    <!-- <AstroFont
       config={[
         {
           src: [],
@@ -32,7 +29,7 @@ import LogoWp from "../assets/Img/whatsapp.svg";
             "https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap",
         },
       ]}
-    />
+    /> -->
   </head>
   <body class="">
     <AppHeader />
@@ -42,19 +39,29 @@ import LogoWp from "../assets/Img/whatsapp.svg";
       <a
         href="https://whatsappweb.com"
         target="_blank"
-        class="flex gap-3 rounded-2xl border cta from-white/50 p-3 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:from-gray-800 dark:to-black/70 dark:shadow-primary/50">
+        class="flex gap-3 rounded-2xl border cta from-white/50 p-3 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:from-gray-800 dark:to-black/70 dark:shadow-primary/50"
+      >
         <img src={LogoWp} alt="" />
       </a>
     </div>
     <style>
+      @font-face {
+        font-family: "LemonMilk";
+        src: url("/fonts/LEMONMILK-Bold.otf") format("otf");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
       html {
         scroll-behavior: smooth;
+        font-family: "LemonMilk", sans-serif;
       }
 
       body {
         margin: 0;
 
-        font-family: "Roboto", sans-serif;
+        font-family: "LemonMilk", sans-serif !important;
       }
 
       .cta {

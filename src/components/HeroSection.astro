@@ -5,11 +5,11 @@ import Astronaut from "../assets/Img/astronaut.png";
 ---
 
 <script>
-  const texts = ["Zenith Agency"]; // Array of texts to display with the effect
+  const texts = ["ZENITH AGENCY"]; // Array of texts to display with the effect
   const typingContainer = document.getElementById("typing-container"); // Element where the text will be shown
   let currentTextIndex = 0;
   let currentText = "";
-  let typingSpeed = 100; // Adjust the typing speed (milliseconds per character)
+  let typingSpeed = 80; // Adjust the typing speed (milliseconds per character)
 
   function type() {
     const text = texts[currentTextIndex];
@@ -57,13 +57,13 @@ import Astronaut from "../assets/Img/astronaut.png";
           <img class="fadeInUp duration-1000" src={Astronaut} alt="" />
         </div>
         <div class="">
-          <div class="contenedor mb-12 contenedor-titulo">
+          <div class="contenedor mb-8 contenedor-titulo">
             <h1 class="text-9xl text-start font-bold">
               <span
-                class="bg-clip-text text-transparent bg-gradient-to-r f500 from-primary to-tercer typing-container"
+                class="bg-clip-text text-transparent bg-gradient-to-r f500 from-tercer to-primary typing-container"
                 id="typing-container"></span>
               <span
-                class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 typing-container"
+                class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-primary typing-container"
                 id="typing-container"></span>
             </h1>
           </div>
@@ -81,15 +81,12 @@ import Astronaut from "../assets/Img/astronaut.png";
                 >Recibe asesoramiento ahora</span
               >
             </a>
-
           </div>
         </div>
       </div>
-
     </div>
   </Container>
 </div>
-
 
 <style>
   .zenith {
@@ -99,6 +96,15 @@ import Astronaut from "../assets/Img/astronaut.png";
     width: 100%;
     overflow: hidden;
     animation: typing 2s steps(60), cursor 0.2s step-end alternate;
+  }
+
+  h1 span {
+    background-color: black;
+  color: transparent;
+  text-shadow: 0px 5px 3px rgb(93 99 112 / 0.1);
+  -webkit-background-clip: text;
+  background-clip: text;
+
   }
 
   .agency {
@@ -157,7 +163,7 @@ import Astronaut from "../assets/Img/astronaut.png";
     animation-duration: 2s;
   }
 
-<<<<<<< HEAD
+  <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -169,15 +175,7 @@ import Astronaut from "../assets/Img/astronaut.png";
   -webkit-text-fill-color: transparent;
 
   } */
-=======
- 
->>>>>>> baaf795 (f)
-<<<<<<< HEAD
-=======
- 
->>>>>>> origin/main
-=======
->>>>>>> 489dbfae5eb6a11b40ac18be94189cb0d7cd6395
+
 
   .subtitulo {
     font-size: 2rem;
