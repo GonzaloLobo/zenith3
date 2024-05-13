@@ -88,7 +88,7 @@ import Astronaut from "../assets/Img/astronaut.png";
           >
             <a
               href="https://api.whatsapp.com/send?phone=+5493865751144&text=Hola, quiero recibir asesoramiento"
-              class="relative flex h-11 items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full bg-primary rounded-full hover:bg-tercer before:transitionbefore:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+              class="boton relative flex h-11 items-center justify-center px-6 before:absolute before:inset-0 bg-primary hover:bg-tercer before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
             >
               <span class="relative text-base font-semibold text-white"
                 >Recibe asesoramiento ahora</span
@@ -170,6 +170,10 @@ import Astronaut from "../assets/Img/astronaut.png";
 
   .space {
     animation: move var(--duration) linear infinite;
+  }
+
+  .boton {
+    border-radius: 5px;
   }
 
   @keyframes move {

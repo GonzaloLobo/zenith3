@@ -115,7 +115,7 @@ const links = [
                   <li>
                     <a
                       href={link.to}
-                      class="text-l hover:text-primary text-white block transition dark:hover:text-white md:px-4 hover:font-bold"
+                      class="text-base hover:text-primary text-white block transition dark:hover:text-white md:px-4 hover:font-bold"
                     >
                       <span>{link.label}</span>
                     </a>
@@ -128,7 +128,7 @@ const links = [
         <div class="mt-12 lg:mt-0 md:hidden">
           <a
             href="https://api.whatsapp.com/send?phone=+5493865751144&text=Hola Zenith Agency, quisiera recibir mas información de sus servicios."
-            class="text-white relative flex h-9 w-28 items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+            class="boton relative flex h-12 items-center justify-center px-8 before:absolute before:inset-0 hover:bg-primary/10 bg-tercer before:text-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
           >
             <span class="relative text-sm font-semibold text-white">
               Contacto</span
@@ -139,7 +139,7 @@ const links = [
       <div class="mt-12 lg:mt-0 hidden lg:block">
         <a
           href="https://api.whatsapp.com/send?phone=+5493865751144&text=Hola Zenith Agency, quisiera recibir mas información de sus servicios."
-          class="text-white relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+          class="boton relative flex h-9 items-center justify-center px-6 before:absolute before:inset-0 hover:bg-primary/10 bg-tercer before:text-white before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max astro-M4TVE3SD"
         >
           <span class="relative text-sm font-semibold text-white">
             Contacto</span
@@ -177,13 +177,17 @@ const links = [
     font-display: swap;
   }
 
+  .boton {
+    border-radius: 5px;
+  }
+
   @media only screen and (max-width: 768px) {
     nav {
       background-color: rgb(173 136 246 / 89%);
       align-items: end;
       padding: 35px;
       border-radius: 2rem;
-      height: 90vh;
+      height: 35vh;
     }
   }
 </style>
