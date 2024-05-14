@@ -1,5 +1,6 @@
 ---
 import Container from "./Container.astro";
+import Astronaut from "../assets/Img/astronaut.png";
 ---
 
 <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
@@ -102,15 +103,7 @@ import Container from "./Container.astro";
   generateSpaceLayer("6px", ".space-3", 25, "15s");
 </script>
 
-<div
-  id="Nosotros"
-  class="valores "
-  style="margin-block: 5rem;"
->
-  <div class="containerEstrella">
-    
-  </div>
-
+<div id="Nosotros" class="valores" style="margin-block: 5rem;">
   <Container>
     <div class="" style=" 
       border-radius: 2rem;">
@@ -122,9 +115,17 @@ import Container from "./Container.astro";
             height="560"
             controls
             autoplay="1"
+            style="z-index: 1;"
           >
             <source src="/video/cortoZ.mp4" type="video/mp4" />
           </video>
+        </div>
+
+        <div
+          class="py-6 md:order-1 hidden md:block absolute"
+          style="left: 23rem;"
+        >
+          <img class="fadeInUp duration-1000" src={Astronaut} alt="" />
         </div>
       </div>
       <!-- <div class="paral mt-24 mb-5 p-20 rounded-md">

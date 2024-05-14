@@ -2,7 +2,7 @@
 import Container from "./Container.astro";
 ---
 
-<div class="relative py-16">
+<div class="relative py-8">
   <div
     aria-hidden="true"
     class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40"
@@ -14,7 +14,9 @@ import Container from "./Container.astro";
   </div>
   <Container>
     <div class="relative">
-      <div class="flex items-center justify-center -space-x-1 ">
+      <div
+        class="flex items-center justify-center -space-x-1  "
+      >
         <div class="contenedor-personal">
           <button
             data-popover-target="popover-default-1"
@@ -78,7 +80,7 @@ import Container from "./Container.astro";
               class="px-3 py-2 bg-tercer border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700"
             >
               <h3 class="font-semibold text-gray-900 dark:text-white">
-                Gonzalo Lobo
+                Victoria
               </h3>
             </div>
             <div class="px-3 py-2">
@@ -150,7 +152,7 @@ import Container from "./Container.astro";
               class="px-3 py-2 bg-tercer border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700"
             >
               <h3 class="font-semibold text-gray-900 dark:text-white">
-                Dana
+                Dana Cisterna
               </h3>
             </div>
             <div class="px-3 py-2">
@@ -333,6 +335,10 @@ import Container from "./Container.astro";
   @media only screen and (max-width: 768px) {
     .boton {
       width: 220px;
+    }
+
+    img {
+      width: 180px;
     }
   }
 </style>
